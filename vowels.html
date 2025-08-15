@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alphabet-Vowels</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .menu button {
+      padding: 5px 5px;
+      font-size: 24px;
+      border: none;
+      border-radius: 10px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu button:hover {
+      background-color: #0056b3;
+    }
+	p {
+      font-size: 100px;
+      border: none;
+      background-color: #f0f0f0;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+  <script>
+    function generar_vowel() {
+			const myVector = ["a", "e", "i", "o", "u"];
+			letra = parseInt(Math.random()*5);
+            document.getElementById("vowel").innerHTML = myVector[letra];
+    }
+	function sonido(){
+		letra = document.getElementById("vowel").innerHTML;
+		if (letra=="a"){
+		   var snd = new Audio("a.wav");
+		   snd.play();
+		}
+			if (letra=="a"){
+		   var snd = new Audio("a.wav");
+		   snd.play();
+		}
+			if (letra=="e"){
+		   var snd = new Audio("e.wav");
+		   snd.play();
+		}
+			if (letra=="i"){
+		   var snd = new Audio("i.wav");
+		   snd.play();
+		}
+		if (letra=="o"){
+		   var snd = new Audio("o.wav");
+		   snd.play();
+		}
+		if (letra=="u"){
+		   var snd = new Audio("u.wav");
+		   snd.play();
+		}
+	}
+  </script>
+</head>
+<body>
+ <center>
+  <h1>ALPHABET<br>
+  &nbsp;&nbsp;&nbsp;Vowels</h1>
+   <p id="vowel"onclick="sonido()">&nbsp;</p>
+  <div class="menu">
+   <button onclick="generar_vowel()">Generate</button>
+   <a href="alphabet.html">  <button>&laquo;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;</button></a>
+  </div>
+  </div>
+ </center>
+</body>
+</html>
