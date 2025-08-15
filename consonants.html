@@ -37,7 +37,7 @@
   <script>
     function generar_vowel() {
 			const myVector = ["b", "c", "d", "f", "g","h", "j", "k", "l", "m","n", "p", "q", "r", "s","t", "v", "w", "x", "y", "z"];
-			letra = parseInt(Math.random()*22);
+			letra = parseInt(Math.random()*21);
             document.getElementById("vowel").innerHTML = myVector[letra];
     }
 	function sonido(){
@@ -114,22 +114,19 @@
 		   var snd = new Audio("w.wav");
 		   snd.play();
 		}
-  		if (letra=="w"){
-		   var snd = new Audio("w.wav");
-		   snd.play();
-		}
-			if (letra=="x"){
+		if (letra=="x"){
 		   var snd = new Audio("x.wav");
 		   snd.play();
 		}
-			if (letra=="y"){
+		if (letra=="y"){
 		   var snd = new Audio("y.wav");
 		   snd.play();
 		}
-			if (letra=="z"){
+		if (letra=="z"){
 		   var snd = new Audio("z.wav");
 		   snd.play();
 		}
+	}
 </script>
 </head>
 <body>
