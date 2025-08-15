@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alphabet-Consonants</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .menu button {
+      padding: 5px 5px;
+      font-size: 24px;
+      border: none;
+      border-radius: 10px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu button:hover {
+      background-color: #0056b3;
+    }
+	p {
+      font-size: 100px;
+      border: none;
+      background-color: #f0f0f0;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+  <script>
+    function generar_vowel() {
+			const myVector = ["b", "c", "d", "f", "g","h", "j", "k", "l", "m","n", "p", "q", "r", "s","t", "v", "w", "x", "y", "z"];
+			letra = parseInt(Math.random()*5);
+            document.getElementById("vowel").innerHTML = myVector[letra];
+    }
+	function sonido(){
+		letra = document.getElementById("vowel").innerHTML;
+		if (letra=="b"){
+		   var snd = new Audio("b.wav");
+		   snd.play();
+		}
+			if (letra=="c"){
+		   var snd = new Audio("c.wav");
+		   snd.play();
+		}
+			if (letra=="d"){
+		   var snd = new Audio("d.wav");
+		   snd.play();
+		}
+			if (letra=="f"){
+		   var snd = new Audio("f.wav");
+		   snd.play();
+		}
+		if (letra=="g"){
+		   var snd = new Audio("g.wav");
+		   snd.play();
+		}
+		if (letra=="h"){
+		   var snd = new Audio("h.wav");
+		   snd.play();
+		}
+		if (letra=="j"){
+		   var snd = new Audio("j.wav");
+		   snd.play();
+		}
+			if (letra=="k"){
+		   var snd = new Audio("k.wav");
+		   snd.play();
+		}
+			if (letra=="l"){
+		   var snd = new Audio("l.wav");
+		   snd.play();
+		}
+			if (letra=="m"){
+		   var snd = new Audio("m.wav");
+		   snd.play();
+		}
+		if (letra=="n"){
+		   var snd = new Audio("n.wav");
+		   snd.play();
+		}
+		if (letra=="p"){
+		   var snd = new Audio("p.wav");
+		   snd.play();
+		}
+  		if (letra=="q"){
+		   var snd = new Audio("q.wav");
+		   snd.play();
+		}
+			if (letra=="r"){
+		   var snd = new Audio("r.wav");
+		   snd.play();
+		}
+			if (letra=="s"){
+		   var snd = new Audio("s.wav");
+		   snd.play();
+		}
+			if (letra=="t"){
+		   var snd = new Audio("t.wav");
+		   snd.play();
+		}
+		if (letra=="v"){
+		   var snd = new Audio("v.wav");
+		   snd.play();
+		}
+		if (letra=="w"){
+		   var snd = new Audio("w.wav");
+		   snd.play();
+		}
+  		if (letra=="w"){
+		   var snd = new Audio("w.wav");
+		   snd.play();
+		}
+			if (letra=="x"){
+		   var snd = new Audio("x.wav");
+		   snd.play();
+		}
+			if (letra=="y"){
+		   var snd = new Audio("y.wav");
+		   snd.play();
+		}
+			if (letra=="z"){
+		   var snd = new Audio("z.wav");
+		   snd.play();
+		}
+</script>
+</head>
+<body>
+ <center>
+  <h1>ALPHABET<br>
+  Consonants</h1>
+   <p id="vowel"onclick="sonido()">&nbsp;</p>
+  <div class="menu">
+   <button onclick="generar_vowel()">Generate</button>
+   <a href="index.html">  <button>&laquo;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;</button></a>
+  </div>
+  </div>
+ </center>
+</body>
+</html>
